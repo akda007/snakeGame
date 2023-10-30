@@ -132,7 +132,7 @@ void appleHandler(Game_T *game) {
 }
 
 bool moveSnake(Game_T *game) {
-    bool ret;
+    bool ret = false;
     switch (game->snake->head.direction) {
         case Up:
             ret = moveUp(game);
